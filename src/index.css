@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: 25 69% 35%;
+  --accent: 45 93% 47%;
+  --background: 0 0% 10%;
+  --dark-mode: 0 0% 6%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: Inter, sans-serif;
+}
+
+body {
+  background: hsl(var(--background));
+  color: white;
+}
+
+canvas {
+  display: block;
+  outline: none;
+}
